@@ -1,0 +1,73 @@
+body {
+    background-color: burlywood;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  p {
+    font: 1em sans-serif;
+    
+  }
+  a {
+	z-index:1;
+	filter:alpha(opacity=100);
+	-moz-opacity:.100;
+	opacity:.70;
+}
+a:hover {
+	opacity: 500;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+}
+
+/* Para hacer cambios a los inputs de tipo texto, numero y correo, de select, y de textarea */
+input[type=text],input[type=number],input[type=email], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 4px; /* Bordes algo redondeados */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Para poder cambiar el tamaño del textarea, pero solo de forma vertical */
+}
+
+/* Para el color del boton de envio */
+input[type=submit] {
+  background-color: #0428aa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Para oscurecer el boton al pasar el mouse encima */
+input[type=submit]:hover {
+  background-color: #100b5a;
+}
+
+/* Para el color de el boton para limpiar las casillas */
+input[type=reset] {
+  background-color: #c70000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Para oscurecer el boton al pasar el mouse encima */
+input[type=reset]:hover {
+  background-color: #5a0b0b;
+}
+
+/* Para hacer padding y ajustar el form */
+.container {
+  border-radius: 5px;
+  padding: 50px;
+}
