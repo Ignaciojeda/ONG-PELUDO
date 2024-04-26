@@ -63,6 +63,6 @@ function validar(){
         alert("LOGRO RELLENAR EL FORMULARIO CORRECTAMENTE WAOS")
     }
     
-
+    
 
     }
