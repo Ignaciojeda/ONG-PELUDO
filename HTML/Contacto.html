@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de contacto</title>
     <link rel="icon"type="image/x-icon"href="https://img.freepik.com/vector-premium/plantilla-logotipo-perro-gato-arte-lineal_469071-187.jpg?w=1380">
+    <script src="../JS/Script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../CSS/Estilo.css">
+    
 </head>
 <body>
   <header>
@@ -36,8 +38,25 @@
           <h1>Contactanos</h1>
           <form action="action_page.php">
         
-            <label for="nombreUsuario">Nombre completo</label>
-            <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Ingresa tu nombre completo">
+            <label for="nombreUsuario">Nombre</label>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Ingresa tu nombre completo" >
+
+            <label for="apellidoPaterno">Apellido Paterno</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Ingresa tu apellido paterno" >
+
+            <label for="apellidoMaterno">Apellido Materno</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Ingresa tu apellido Materno">
+
+            <label for="genero">Genero</label>
+            <select id="genero" name="genero">
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+              <option value="Helicoptero">Boeing AH-64 Apache </option>
+            </select>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="Edad" name="Edad" placeholder="Ingresa tu Edad">
+
         
             <label for="correoUsuario">Email</label>
             <input type="email" id="correoUsuario" name="correoUsuario" placeholder="Ingresa tu correo electronico">
@@ -48,23 +67,25 @@
               <option value="pasaporte">Pasaporte</option>
             </select>
   
-            <label for="nroDoc">Número documento</label>
-            <input type="number" id="nroDoc" name="nroDoc" placeholder="Formato: 12345678-9">
+            <label  for="nroDoc">Número documento</label>
+            <input type="number" id="nroDoc" name="nroDoc" placeholder="Formato: 12345678-9" >
 
             <label for="nroUsuario">Número de teléfono</label>
-            <input type="number" id="nroUsuario" name="nroUsuario" placeholder="Formato: 9 12345678">
+            <input type="number" id="nroUsuario" name="nroUsuario" placeholder="Formato: 9 12345678" >
 
             <label for="ciudad">Ciudad</label>
-            <input type="text" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad de residencia">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad de residencia" >
   
             <label for="subject">¿Porque nos contacta?</label>
             <textarea id="subject" name="subject" placeholder="Escribanos un mensaje indicando su motivo de contacto, tambien si desea participar de nuestra ONG." style="height:150px"></textarea>
             
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
+           <input  type="button" onclick="validar()" class="btn btn-primary" value="Enviar" >
+            <input type="reset"  value="Limpiar"> 
           </form>
       </div>
     </div> 
+
+
   </section>   
   <footer>
     <center>
