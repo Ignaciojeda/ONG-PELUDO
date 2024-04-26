@@ -62,7 +62,14 @@ function validar(){
     }else{
         alert("LOGRO RELLENAR EL FORMULARIO CORRECTAMENTE WAOS")
     }
-    
-    
+    }
+    function login(){
+        let user=document.getElementById("usuario").value;
+        let pass=document.getElementById("contraseñaLogin").value;
 
+        if (user=="fcalfun" && pass=="1234"){
+            window.location="Inicio.html";
+        }else{
+            alert("Datos Incorrectos")
+        }
     }

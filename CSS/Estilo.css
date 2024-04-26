@@ -71,3 +71,12 @@ input[type=reset]:hover {
   border-radius: 5px;
   padding: 50px;
 }
+.formulario{
+  position:absolute;
+  text-align: center;
+  top: 100px;
+  left: 35%;
+  width: 400px;
+  border-radius: 10px;
+
+}
