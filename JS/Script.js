@@ -1,5 +1,4 @@
 
-
 function validar(){
     var correo = document.getElementById('correoUsuario').value
     var error=[];
