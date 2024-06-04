@@ -1,85 +1,86 @@
 body {
-    background-color: #b8e1ff;
-  }
-  
-  h1 {
-    color: black;
-  }
-  
-  p {
-    font: 1em sans-serif;
-    
-  }
-  a {
-	z-index:1;
-	filter:alpha(opacity=100);
-	-moz-opacity:.100;
-	opacity:.70;
+  background-color: #b8e1ff;
+}
+
+
+h1 {
   color: black;
 }
+
+p {
+  font: 1em sans-serif;
+  
+}
+a {
+z-index:1;
+filter:alpha(opacity=100);
+-moz-opacity:.100;
+opacity:.70;
+color: black;
+}
 a:hover {
-	opacity: 500;
+opacity: 500;
 
 }
 .contenedor {
-  display: grid;
-  grid-template-columns: repeat(2,2fr);
-  background-color: #f4d35e;
+display: grid;
+grid-template-columns: repeat(2,2fr);
+background-color: #f4d35e;
 }
 
 /* Para hacer cambios a los inputs de tipo texto, numero y correo, de select, y de textarea */
 input[type=text],input[type=number],input[type=email], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; /* Borde gris */
-  border-radius: 4px; /* Bordes algo redondeados */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical /* Para poder cambiar el tamaño del textarea, pero solo de forma vertical */
+width: 100%; 
+padding: 12px; 
+border: 1px solid #ccc; /* Borde gris */
+border-radius: 4px; /* Bordes algo redondeados */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; 
+margin-bottom: 16px; 
+resize: vertical /* Para poder cambiar el tamaño del textarea, pero solo de forma vertical */
 }
 
 /* Para el color del boton de envio */
 input[type=submit] {
-  background-color: #fb5607;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+background-color: #fb5607;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
 /* Para oscurecer el boton al pasar el mouse encima */
 input[type=submit]:hover {
-  background-color: #100b5a;
+background-color: #100b5a;
 }
 
 /* Para el color de el boton para limpiar las casillas */
 input[type=reset] {
-  background-color: #c70000;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+background-color: #c70000;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
 /* Para oscurecer el boton al pasar el mouse encima */
 input[type=reset]:hover {
-  background-color: #5a0b0b;
+background-color: #5a0b0b;
 }
 
 /* Para hacer padding y ajustar el form */
 .container {
-  border-radius: 5px;
-  padding: 50px;
+border-radius: 5px;
+padding: 50px;
 }
 .formulario{
-  position:absolute;
-  text-align: center;
-  top: 100px;
-  left: 35%;
-  width: 400px;
-  border-radius: 10px;
+position:absolute;
+text-align: center;
+top: 100px;
+left: 35%;
+width: 400px;
+border-radius: 10px;
 
 }
