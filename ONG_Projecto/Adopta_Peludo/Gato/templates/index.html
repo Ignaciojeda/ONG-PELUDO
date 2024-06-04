@@ -1,11 +1,92 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gatos</title>
+    <title>Document</title>
+    <link rel="icon"type="image/x-icon"href="https://img.freepik.com/vector-premium/plantilla-logotipo-perro-gato-arte-lineal_469071-187.jpg?w=1380">
+    <script src="{% static 'JS/Script.js'%}"></script>
+    <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'%}" rel="stylesheet">
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'%}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/Estilo.css'%}">
 </head>
 <body>
-    <h1>Gato</h1>
+    <Header> 
+  
+        <div style="background-color:#28afb0;">
+            <h1 style="text-align: center;" >ONG - AYUDA A UN PELUDO </h1>
+            <center>La ONG "AYUDA A UN PELUDO" es una organizacion sin fines de lucro, enfocada en ayudar a todos los animales en situacion
+                de calle, y con el proposito de poder encontrarles una familia y un lugar donde sean queridos.</center>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Perros">Perros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Gatos">Gatos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="Contacto">Contacto</a>
+                    </li>
+                  </ul>
+
+          </div>
+     </Header>
+
+    <section>
+        <article>
+            <div style="background-color:#28afb0;">
+            <h2>Nuestros integrantes:</h2></center>
+            <nav>
+                <ul>
+                  <li><a href="#">Sebastian</a></li>    
+                  <li><a href="#">Gonzalo</a></li>
+                  <li><a href="#">Ignacio</a></li>
+                </ul>
+              </nav>
+            <center> <h1>Nuestras secciones de ayuda</h1></center>
+          </div>
+          </article> 
+    <div class="contenedor">
+    <article>
+        <div class="container mt-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="https://filiosfoods.com/wp-content/uploads/2023/09/Filios-Gato-Gatos-1024x998.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Gatos</h4>
+                <p class="card-text">Aqui tenemos gatitos</p>
+                <a href="Gatos" class="btn btn-primary">Ver mas gatos</a>
+              </div>
+            </div>
+            <br>
+    </article>
+
+    <article>
+        <div class="container mt-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfxXfH1ma5Ku15MwsKmTap26sGRLSUYi8yHg&usqp=CAU" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Perros</h4>
+                <p class="card-text">Aqui tenemos perritos</p>
+                <a href="Perros" class="btn btn-primary">Ver mas perros</a>
+              </div>
+            </div>
+            <br>
+    </article>
+    </div>    
+    </section>
+
+
+    <footer>
+
+
+    <h6>©todos los derechos reservados 2024 ©
+    </h6>
+    </footer>
+
 </body>
 </html>

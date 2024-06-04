@@ -20,5 +20,8 @@ from Gato.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('gato/', index),
+    path('', index),
+    path('Perros/', Perros),
+    path('Gatos/', Gatos),
+    path('Contacto/',Contacto),
 ]
