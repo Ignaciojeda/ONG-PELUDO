@@ -64,7 +64,11 @@
             </div>
             <br>
     </article>
-
+    <article>
+      {% for gato in Gatitos %}
+      {{gato.nombre_gato}}
+      {%endfor %}
+    </article>
     <article>
         <div class="container mt-3">
             <div class="card" style="width:400px">
