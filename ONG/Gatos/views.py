@@ -23,7 +23,7 @@ def Gato(request):
 
 
 def agregarMascota(request):
-    if request.method is not "POST":
+    if request.method != "POST":
         sexos=Sexo.objects.all();
         context={'sexo':sexos}
         return render(request,'html/agregarMascota.html',context)
@@ -34,7 +34,6 @@ def agregarMascota(request):
         fecha_nac=request.POST["fechaNac"]
         raza=request.POST["razaMascota"]
         sexo=request.POST["sexo"]
-        activo="1"
     
         objSexo=Sexo.objects.get(id_sexo = sexo)
         obj=Mascota.objects.create(id_mascota=idMascota,
@@ -42,7 +41,7 @@ def agregarMascota(request):
                                    fecha_nacimiento=fecha_nac,
                                    raza_mascota=raza,
                                    id_sexo=objSexo,
-                                   activo=1)
+                                   )
         obj.save()
         context={'mensaje':'OK, datos guardados con éxito'}
         return render(request,'html/agregarMascota.html',context)

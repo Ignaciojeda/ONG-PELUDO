@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 class Mascota(models.Model):
     id_mascota       = models.CharField(primary_key=True, max_length=10)
-    nombre_mascota   = models.CharField(max_length=20)
+    nombre_mascota   = models.CharField(max_length=30)
     fecha_nacimiento = models.DateField(blank=False, null=False)
-    raza_mascota     = models.CharField(max_length=20)
+    raza_mascota     = models.CharField(max_length=30)
     id_sexo          = models.ForeignKey('Sexo',on_delete=models.CASCADE, db_column='idSexo')
 
     def __str__(self):
