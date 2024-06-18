@@ -8,9 +8,9 @@ urlpatterns =  [
     path('Contacto/',views.Contacto,name='Contacto'),
     path('mascota/',views.mascota,name='mascota'),
     path('administracion/',views.Administrador,name='Administrador'),
-    path('agregarMascota',views.agregarMascota,name='agregarMascota'),
+    path('agregarMascota',views.AgregarMascota,name='agregarMascota'),
     path('encontrarMascota/<str:pk>',views.encontrarMascota,name='encontrarMascota'),
     path('modificarMascota',views.modificarMascota,name='modificarMascota'),
     path('eliminarMascota/<str:pk>',views.eliminarMascota,name='eliminarMascota'),
  
-]
+] 

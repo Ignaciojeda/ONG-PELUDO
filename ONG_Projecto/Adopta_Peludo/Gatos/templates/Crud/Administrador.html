@@ -8,7 +8,7 @@
 <body>
     <h1>Panel de Administración de mascotas</h1>
     <button type="button">
-        <a href="{% url 'AgregarMascota' %}">Agregar mascota</a>
+        <a href="{% url 'agregarMascota' %}">Agregar mascota</a>
     </button>
     <div id="idMensaje">
         {% if mensaje %}
@@ -16,7 +16,7 @@
         {% endif %}
     </div>
     <table>
-        {% if mascota %}
+        {% if mascotas %}
         <th>ID MASCOTA</th>
         <th>NOMBRE</th>
         <th>FECHA NACIMIENTO</th>
@@ -33,8 +33,8 @@
             <td>{{m.fecha_nacimiento}}</td>
             <td>{{m.raza_mascota}}</td>
             <td>{{m.id_genero.genero}}</td>
-            <td><a href="{% url 'encontrar' pk=m.id_mascota %}">Modificar</a></td>
-            <td><a href="{% url 'eliminar'  pk=m.id_mascota %}">Eliminar</a></td>
+            <td><a href="{% url 'encontrarMascota' pk=m.id_mascota %}">Modificar</a></td>
+            <td><a href="{% url 'eliminarMascota'  pk=m.id_mascota %}">Eliminar</a></td>
         </tr>
         {% endfor %}
     {% endif %}    

@@ -15,13 +15,13 @@
         <pre>Fecha nacimiento:                  <input type="date" name="fechaNac"></pre>
         <pre>Raza mascota:                      <input type="text" name="razaMascota"></pre>
         <pre>Sexo mascota:                      <select name="sexo">
-            {% for s in sexo %}
-                <option value="{{s.id_sexo}}">{{s.sexo}}</option>
+            {% for s in sexos %}
+                <option values="{{s.id_sexo}}">{{s.sexo}}</option>
             {% endfor %}</select></pre>
         <input type="submit" name="opcion" value="Agregar">
 
     </form>
-    <br></bra><a href="{% url 'admin' %}">Volver a Administración</a>
+    <br></bra><a href="{% url 'Administrador' %}">Volver a Administración</a>
 
     <div id="idMensaje">
         {% if mensaje %}
