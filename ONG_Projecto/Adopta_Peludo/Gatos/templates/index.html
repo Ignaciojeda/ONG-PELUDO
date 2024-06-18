@@ -65,10 +65,10 @@
             <br>
     </article>
     <article>
-      {% for gato in Gatitos %}
-      {{gato.nombre_gato}}
+      {% for c in mascotas %}
+      {{c.nombre_mascota}}
       {%endfor %}
-      <a href="{% url 'index' %}">Ir a mascotas</a><br>
+      <a href="{% url 'mascotas' %}">Ir a mascotas</a><br>
       <a href="{% url 'Administrador' %}">Administración</a>
     </article>
     <article>

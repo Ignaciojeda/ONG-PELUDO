@@ -31,7 +31,7 @@ def Contacto(request):
     return render(request, 'Contacto.html',contexto)
 
 def AgregarMascota(request):
-    if request.method == "POST":
+    if request.method != "POST":
         sexos=Sexo.objects.all();
         context={'sexo':sexos}
         return render(request,'Crud/AgregarMascota.html',context)
@@ -42,15 +42,20 @@ def AgregarMascota(request):
         raza=request.POST.get("razaMascota")
         sexos=request.POST.get("sexo")
 
-        objetoSexo=Sexo.objects.filter(id_sexo=idSexo).first() 
-        obj=Mascota.objects.create(id_mascota=idMascota,
-                                   nombre_mascota=nombre,
-                                   fecha_nacimiento=fecha_nac,
-                                   raza_mascota=raza,
-                                   id_sexo=objetoSexo,
-                                   )
-        obj.save()
-        context={'mensaje':'OK, datos guardados con éxito'}
+        objetoSexo=Sexo.objects.filter(id_sexo=sexos).first() 
+        if objetoSexo:
+            obj = Mascota.objects.create(
+                id_mascota=idMascota,
+                nombre_mascota=nombre,
+                fecha_nacimiento=fecha_nac,
+                raza_mascota=raza,
+                id_sexo=objetoSexo,
+            )
+            obj.save()
+            context = {'mensaje': 'OK, datos guardados con éxito'}
+        else:
+            context = {'mensaje': 'Error, sexo no encontrado'}
+
         return render(request,'Crud/agregarMascota.html',context)
 
 
